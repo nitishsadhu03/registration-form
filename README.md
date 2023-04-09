@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# SAMPLE REGISTRATION FORM
+
+This is a sample registration form which may be used for college purpose.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Tech Stacks Used
+1. HTML
+2. CSS
+3. JavaScript
+4. React js
 
 ## Available Scripts
 

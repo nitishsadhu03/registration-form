@@ -1,13 +1,179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to right bottom, #8f00ff, #a139ff, #b057ff, #be72ff, #cb8aff);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 95%;
+    width: 75vw;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.15);
+}
+
+.left-content-area, .right-content-area {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.left-content-area {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.right-content-area {
+    background-color: #8F00FF;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.right-content-area .contents .select-tags {
+    color: black;
+}
+
+
+.contents, .heading {
+    padding: 20px 50px;
+}
+
+.right-content-area .contents input {
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 30vw;
+    border-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.715);
+    background-color: transparent;
+    color: white;
+    margin-bottom: -60px;
+
+}
+
+.left-content-area .contents input {
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 30vw;
+    border-style: none;
+    border-bottom: 1px solid rgba(59, 59, 59, 0.3);
+    background-color: transparent;
+    color: black;
+    margin-bottom: -60px;
+}
+
+.right-content-area .contents input::placeholder {
+    color: white;
+}
+
+.left-content-area .heading {
+    color: #8F00FF;
+    margin-bottom: 20px;
+}
+
+
+.select-tags {
+    width: 30vw;
+    height: 40px;
+}
+
+.span-left-part {
+    margin-left: 50px;
+    margin-right: 32px;
+}
+
+.span-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 28vw;
+
+}
+
+.span-items input {
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 14vw;
+    border-style: none;
+    border-bottom: 1px solid rgba(59, 59, 59, 0.3);
+    background-color: transparent;
+    color: black;
+}
+
+.right-content-area .span-items input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.715);
+    color: white;
+}
+
+.right-content-area .span-items input::placeholder {
+    color: white;
+}
+
+.span-items.checkbox {
+    margin-top: 30px;
+}
+
+input.checkbox-input {
+    width: 25px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.span-items.checkbox p {
+    font-size: 1.02rem;
+    margin-top: 10px;
+}
+
+.span-items.checkbox p a{
+    color: black;
+    cursor: pointer;
+}
+
+.contents button {
+    margin-top: 10px;
+    width: 170px;
+    height: 45px;
+    border-radius: 20px;
+    border:1px solid white ;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 3px 3px rgba(196, 192, 192, 0.888);
+}
+
+.contents button:hover {
+    background-color: rgba(196, 192, 192, 0.888);
+    border-color: rgba(196, 192, 192, 0.888);
+}
+
+@media(max-width: 720px) {
+    #root {
+        flex-direction: column;
+    }
 }
